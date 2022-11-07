@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>RIO BINTANG SADEWA - 320200401024</title>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="title" >
+                <h1>Netlab Bookstore</h1>
+                <p>Toko Buku Paling Lengkap</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">HOT!</a></li>
+                    <li><a href="#">Main menu</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="card" id="main">
+                <h2>Welcome to Netlab Bookstore</h2>
+                <p1>Netlab Bookstore merupakan sebuah toko buku yang memiliki berbagai macam buku yang dapat kamu cari! 
+                    Dapatkan buku Anda sekarang di Netlab Bookstore!</p1>
+            </div>
+            <aside>
+                <article id="promo" class="card">
+                    <header>
+                        <h2>PROMO!</h2>
+                        <figure><img src="https://lh3.googleusercontent.com/-iSPRVYBp3UY/YiWb7sTE8RI/AAAAAAAAEio/kAuq-enve7UGNsHIzJolvwJNsB4Jx482ACNcBGAsYHQ/s1600/images.jpeg"></figure>
+                        <p2>Buku Murah</p2>
+                        <br>
+                    </header>
+                </article>
+            </aside>
+            <div class="container">
+                <div id="newReleaseBook">
+                    <h2>NEW RELEASE BOOK</h2>
+                    <table>
+                      <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Subtitle</th>
+                            <th>ISBN13</th>
+                            <th>Price</th>
+                            <th>Image</th>
+                            <th>URL</th>
+                          </tr>
+                      </thead>
+                      <tbody id="bookId">
+                  
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="detailsbook">
+                <form action="">
+                    <label> Enter ISDB13 </label><input type="text" id="isbn" name="isbn">
+                    <button type="button" onclick="detailBooks()">Search</button>
+                </form>
+                    <table id="detailsBookId" class="hidden">
+                      <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Subtitle</th>
+                            <th>ISBN13</th>
+                            <th>Price</th>
+                            <th>Image</th>
+                            <th>URL</th>
+                            <th>Rating</th>
+                            <th>Year</th>
+                            <th>Publisher</th>
+                            <th>Desc</th>
+                          </tr>
+                      </thead>
+                      <tbody id="detail">
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>
+            Netlab Bookstore </br>
+            Universitas Indonesia </br>
+            Depok, Jawa Barat </br>
+            © 2022 by Netlab Bookstore </br>
+            </p>
+        </footer>
+    </body>
+</html>
